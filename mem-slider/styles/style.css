@@ -28,3 +28,76 @@ body {
   margin-bottom: 1rem;
   border-radius: 1rem;
 }
+#radio-one:checked ~ .slider-wrapper .slider-body .slide-one {
+  margin-left: 0;
+}
+#radio-two:checked ~ .slider-wrapper .slider-body .slide-one {
+  margin-left: -25%;
+}
+#radio-three:checked ~ .slider-wrapper .slider-body .slide-one {
+  margin-left: -50%;
+}
+#radio-four:checked ~ .slider-wrapper .slider-body .slide-one {
+  margin-left: -75%;
+}
+input[name='rad'] {
+  display: none;
+}
+.switch {
+  margin: 0 auto;
+  margin-top: -2.5rem;
+  width: 60%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 1.3rem;
+}
+.label span {
+  font-size: 0;
+  width: 2rem;
+  background-color: #ddd;
+  border: 0.2rem solid rgb(109, 116, 113);
+  border-radius: 0.5rem;
+
+  height: 0.7rem;
+  transition: all 0.3s ease;
+}
+.label:hover {
+  cursor: pointer;
+}
+.label:hover span {
+  cursor: pointer;
+  background-color: rgba(109, 116, 113);
+  border: 0.2rem solid rgba(109, 116, 113);
+}
+.label:active span {
+  background-color: rgb(192, 196, 194);
+  border-color: rgb(192, 196, 194);
+}
+.slider-text {
+  font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
+}
+#radio-one:checked ~ .switch .label:nth-child(1) span {
+  background-color: rgb(69, 74, 72);
+  border: 0.2rem solid rgb(69, 74, 72);
+}
+#radio-two:checked ~ .switch .label:nth-child(2) span {
+  border: 0.2rem solid rgb(69, 74, 72);
+  background-color: rgb(69, 74, 72);
+}
+#radio-three:checked ~ .switch .label:nth-child(3) span {
+  border: 0.2rem solid rgb(69, 74, 72);
+  background-color: rgb(69, 74, 72);
+}
+#radio-four:checked ~ .switch .label:nth-child(4) span {
+  border: 0.2rem solid rgb(69, 74, 72);
+  background-color: rgb(69, 74, 72);
+}
+
